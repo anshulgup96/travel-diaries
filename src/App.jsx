@@ -9,7 +9,10 @@ import Signup from './pages/signup/Singup';
 
 function App() {
   useEffect(() => {
-    fetch('http://localhost:5050/users?name=Ned%20Stark')
+    fetch('http://localhost:5050/users?name=Ned%20Stark', {
+      method: 'GET',
+      credentials: 'include',
+    })
       .then((res) => res.json())
       .then(console.log);
   }, []);
