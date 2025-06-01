@@ -1,0 +1,42 @@
+.navbarHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 0 24px;
+  box-shadow: 0 2px 8px #f0f1f2;
+}
+
+.leftContainer {
+  font-size: 20px;
+  font-weight: bold;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logoLink {
+  height: 100%;
+}
+
+.searchBar {
+  width: 400px;
+  padding: 10px;
+  height: 100%;
+}
+
+.logoImage {
+  height: 100%;
+}
+
+.userContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.loginButton {
+  width: 100px;
+  padding: 20px 40px;
+}

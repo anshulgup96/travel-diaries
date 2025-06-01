@@ -1,4 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+
+import Navbar from '../../components/navbar/Navbar';
 
 function Feed() {
   // useEffect(() => {
@@ -9,7 +11,11 @@ function Feed() {
   //     .then((res) => res.json())
   //     .then(console.log);
   // }, []);
-  return <div>Feed</div>;
+  return (
+    <div>
+      <Navbar />
+    </div>
+  );
 }
 
 export default Feed;

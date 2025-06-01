@@ -5,15 +5,17 @@ import Feed from './pages/feed/Feed';
 import Login from './pages/login/Login';
 import Signup from './pages/signup/Singup';
 
+import { ROUTES } from './routes';
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navigate to={'/feed'} />} />
-        <Route path="/add" element={<Add />} />
-        <Route path="/feed" element={<Feed />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
+        <Route path={ROUTES.ROOT} element={<Navigate to={ROUTES.FEED} />} />
+        <Route path={ROUTES.ADD} element={<Add />} />
+        <Route path={ROUTES.FEED} element={<Feed />} />
+        <Route path={ROUTES.LOGIN} element={<Login />} />
+        <Route path={ROUTES.SIGNUP} element={<Signup />} />
       </Routes>
     </BrowserRouter>
   );
