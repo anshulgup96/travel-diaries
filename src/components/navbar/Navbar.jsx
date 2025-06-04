@@ -14,11 +14,8 @@ const { Header } = Layout;
 const Navbar = () => {
   const [isTransparent, setTransparent] = useState(false);
   const handleScroll = _throttle(() => {
-    if (window.scrollY > 1) {
-      setTransparent(true);
-    } else {
-      setTransparent(false);
-    }
+    if (window.scrollY > 1) setTransparent(true);
+    else setTransparent(false);
   }, 100);
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
