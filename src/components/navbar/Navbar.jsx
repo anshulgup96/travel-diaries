@@ -19,7 +19,7 @@ const Navbar = () => {
     } else {
       setTransparent(false);
     }
-  }, 500);
+  }, 100);
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
