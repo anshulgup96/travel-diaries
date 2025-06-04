@@ -21,7 +21,7 @@ function Feed() {
       <Navbar />
       <div className={styles.postsContainer}>
         {posts.map((post) => (
-          <Post {...post} />
+          <Post key={post._id} {...post} />
         ))}
       </div>
     </div>
