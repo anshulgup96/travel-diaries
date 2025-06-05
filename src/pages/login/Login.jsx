@@ -1,7 +1,6 @@
 import React from 'react';
 import { GoogleLogin } from '@react-oauth/google';
-import { Input } from 'antd';
-import { Button } from 'antd';
+import { Input, Button } from 'antd';
 import { useForm, Controller } from 'react-hook-form';
 
 import styles from './Login.module.css';
