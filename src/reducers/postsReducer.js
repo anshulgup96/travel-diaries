@@ -4,7 +4,10 @@ export const fetchPosts = createAsyncThunk(
   'posts',
   async (_, { signal, rejectWithValue }) => {
     try {
-      const response = await fetch('http://localhost:5050/posts', { signal });
+      const response = await fetch(
+        'https://travel-diaries-server-u67e.onrender.com/posts',
+        { signal }
+      );
       return await response.json();
     } catch (error) {
       if (error.name === 'AbortError') {
