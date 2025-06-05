@@ -7,4 +7,5 @@
 #root {
   min-height: 100vh;
   background-color: lightgray;
+  padding: 1px;
 }

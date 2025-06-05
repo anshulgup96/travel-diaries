@@ -1,0 +1,34 @@
+.loginContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.heroImg {
+  width: 350px;
+  height: 50%;
+  margin-bottom: 10px;
+}
+
+.formContainer {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.loginForm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
